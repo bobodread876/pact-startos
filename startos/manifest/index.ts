@@ -13,11 +13,11 @@ export const manifest = setupManifest({
   volumes: ['main'],
   images: {
     pactd: {
-      source: {
-        dockerBuild: {
-          buildArgs: { IMAGE: 'ghcr.io/bobodread876/pactd:0.18.0' },
-        },
-      },
+      // Upstream pactd 0.20.1's image (built by the pactd-v0.20.1 release) has
+      // the eMudhra CA fix baked in (CA store refresh + use-openssl-ca), so the
+      // temporary wrapper Dockerfile from Start9-Community PR#6 comes out per
+      // their issue #7.
+      source: { dockerTag: 'ghcr.io/bobodread876/pactd:0.20.1' },
       arch: ['x86_64', 'aarch64'],
     },
   },
