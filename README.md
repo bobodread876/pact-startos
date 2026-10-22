@@ -35,7 +35,7 @@
 
 ## Image and Container Runtime
 
-One upstream image, built through the root `Dockerfile`: a temporary layer that upgrades its CA store and sets `NODE_OPTIONS=--use-openssl-ca`, which comes out once upstream ships an image built on a fixed store and Node.
+One upstream image, consumed unmodified. (A temporary CA-store layer added for the eMudhra compromise in 2026-10 came out in 0.20.1:0 — upstream `pactd:0.20.1` ships Node 22.23.4 and a refreshed store.)
 
 | Property      | Value                        |
 | ------------- | ---------------------------- |
