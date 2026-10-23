@@ -17,7 +17,7 @@ export const manifest = setupManifest({
       // the eMudhra CA fix baked in (CA store refresh + use-openssl-ca), so the
       // temporary wrapper Dockerfile from Start9-Community PR#6 comes out per
       // their issue #7.
-      source: { dockerTag: 'ghcr.io/bobodread876/pactd:0.20.1' },
+      source: { dockerTag: 'ghcr.io/bobodread876/pactd:0.20.2' },
       arch: ['x86_64', 'aarch64'],
     },
   },

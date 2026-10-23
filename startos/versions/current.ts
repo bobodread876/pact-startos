@@ -1,10 +1,10 @@
 import { IMPOSSIBLE, VersionInfo } from '@start9labs/start-sdk'
 
 export const current = VersionInfo.of({
-  version: '0.20.1:0',
+  version: '0.20.2:0',
   releaseNotes: {
     en_US:
-      'Upstream pactd 0.20.1: consent, privacy and daemon hardening; the image now ships Node 22.23.4 (October 2026 security release) and distrusts the compromised eMudhra certificate authority, so the temporary CA-store layer is removed.',
+      'Upstream pactd 0.20.2: the P0 security-audit stack (consent verdicts, UI safe-DOM, HTTP origin/host guards, fulfill-before-consume paywall) + Node 22.23.4 + the eMudhra distrust baked into the image.',
     es_ES:
       'pactd 0.20.1: endurecimiento de consentimiento, privacidad y demonio; la imagen incluye Node 22.23.4 (release de seguridad de octubre 2026) y deja de confiar en la autoridad de certificación comprometida eMudhra, por lo que se elimina la capa temporal de CA.',
     de_DE:
